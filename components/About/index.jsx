@@ -1,13 +1,12 @@
 import React from 'react';
 import Image from 'next/image';
+import { Section } from '../index.js';
 
-const About = () => {
+export default function About() {
   return (
-    <div className='w-full md:h-screen p-8 flex items-center py-16'>
-      <div className='max-w-[1240px] m-auto md:grid grid-cols-3 gap-8'>
+    <Section title='About' subtitle='Who I am'>
+      <div className='max-w-[1240px] md:grid grid-cols-3 gap-8'>
         <div className='col-span-2'>
-          <p className='uppercase text-xl tracking-widest text-[#5651e5]'>About</p>
-          <h2 className='py-5'>Who I am</h2>
           <p className='py-4 text-gray-600'>
             I am a full-stack software enginner who got her start in the biochemical and medical field. My journey towards becoming a software engineer was not a straightforward one. Graduating from the University of California, Los Angeles &#40;UCLA&#41;, I started my career within healthcare as a medical scribe. Working in the medical field allowed me to test different functionalities within electronic chart systems and sparked my fascination with software engineering.
           </p>
@@ -28,14 +27,12 @@ const About = () => {
           <Image
             src='/../public/assets/profile.jpg'
             alt='profile'
-            width='400'
-            height='400'
-            className='rounded-xl shadow-xl shadow-gray-400 hover:scale-105 ease-in duration-300'
+            width='200'
+            height='200'
+            className='rounded-xl shadow-xl shadow-gray-400 hover:scale-105 ease-in duration-300 min-w-full'
           />
         </div>
       </div>
-    </div>
+    </Section>
   )
 }
-
-export default About;
