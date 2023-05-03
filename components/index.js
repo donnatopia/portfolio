@@ -1,4 +1,5 @@
-export { default as About } from './About.jsx';
-export { default as Main } from './Main.jsx';
-export { default as Navbar } from './Navbar.jsx';
-export { default as Skills } from './Skills/index.jsx';
+export { default as About } from './About';
+export { default as Main } from './Main';
+export { default as Navbar } from './Navbar';
+export { default as Skills } from './Skills';
+export { default as Projects } from './Projects';
