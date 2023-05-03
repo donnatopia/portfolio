@@ -17,7 +17,7 @@ export default function Skills() {
       <div className='max-w-[1240px] mx-auto flex flex-col justify-center h-full'>
         <p className='uppercase text-xl tracking-widest text-[#5651e5]'>Skills</p>
         <h2 className='py-5'>What I Can Do</h2>
-        <div className='grid grid-cols-4 gap-4 justify-center items-center'>
+        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 justify-center items-center'>
           { skillTypes.map(skillType => <SkillCard key={skillType} skillType={skillType}/>)}
         </div>
       </div>
