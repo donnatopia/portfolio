@@ -30,7 +30,7 @@ export default function SkillCard({ skillType }) {
 
   return (
     <div key={ skillType }>
-      <div className='max-w-sm rounded overflow-hidden shadow-lg p-4 bg-slate-100'>
+      <div className='max-w-sm rounded overflow-hidden shadow-lg p-4 bg-slate-100 hover:scale-105 ease-in duration-300'>
         <h3 className='uppercase text-lg tracking-widest py-4 text-gray-600'>{ skillType.replace(/.-/, '') }</h3>
         <div className='grid grid-cols-2 gap-4 justify-center items-center'>
           { skills.map(skill => <Skill key={skill} type={skillType} skill={skill}/>)}
