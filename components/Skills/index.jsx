@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import Image from 'next/image';
-import SkillCard from './SkillCard.jsx'
+import Card from './Card.jsx'
 
 export default function Skills() {
   const [skillTypes, setSkillTypes] = useState([]);
@@ -18,7 +18,7 @@ export default function Skills() {
         <p className='uppercase text-xl tracking-widest text-[#5651e5]'>Skills</p>
         <h2 className='py-5'>What I Can Do</h2>
         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 justify-center items-center'>
-          { skillTypes.map(skillType => <SkillCard key={skillType} skillType={skillType}/>)}
+          { skillTypes.map(skillType => <Card key={skillType} skillType={skillType}/>)}
         </div>
       </div>
     </div>
