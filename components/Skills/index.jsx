@@ -18,7 +18,7 @@ export default function Skills() {
     dots: true,
     infinite: true,
     slidesToShow: 4,
-    slidesToScroll: 4,
+    slidesToScroll: 1,
     speed: 1000,
     autoplay: true,
     autoplaySpeed: 5000,
@@ -27,14 +27,14 @@ export default function Skills() {
         breakpoint: 1024,
         settings: {
           slidesToShow: 3,
-          slidesToScroll: 3,
+          slidesToScroll: 1,
         }
       },
       {
         breakpoint: 600,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 2,
+          slidesToScroll: 1,
         }
       },
       {
