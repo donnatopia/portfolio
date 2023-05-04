@@ -1,41 +1,32 @@
 import React from 'react';
-import { AiOutlineMail } from 'react-icons/ai';
-import { FaLinkedinIn, FaGithub } from 'react-icons/fa';
-import { BsFillPersonLinesFill } from 'react-icons/bs';
+import { Typewriter } from 'react-simple-typewriter';
+import Socials from '../Contact/Socials.jsx';
 
-const Main = () => {
+export default function Main() {
+  const roles = ['Fullstack Engineer', 'Frontend Developer', 'Backend Developer', 'Software Engineer'];
+  const tags = ['fullstack', 'intuitive', 'memorable-ui', 'transformative-ideas', 'high-quality-software'];
+
   return (
     <div className='w-full h-screen text-center'>
       <div className='max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center'>
         <div>
           <p className='uppercase text-sm tracking-widest text-gray-600'>hello world</p>
-          <h1 className='py-4 text-gray-700'>
-            Hi, I&apos;m <span className='text-[#5651e5]'>Donna</span>
-          </h1>
-          <h1 className='py-2 text-gray-700'>
-            A Full Stack Software Engineer
-          </h1>
-          <p className='py-4 text-gray-600 max-w-[70%] m-auto'>
-            I am a full stack engineer with an expertise in JavaScript, React, Node.js, and other related technologies. I am skilled in collaborative problem-solving, software design, and agile development, and have a track record of delivering high-quality software.
-          </p>
-          <div className='flex items-center justify-between max-w-[330px] m-auto py-4'>
-            <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
-              <FaLinkedinIn />
-            </div>
-            <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
-              <FaGithub />
-            </div>
-            <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
-              <AiOutlineMail />
-            </div>
-            <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
-              <BsFillPersonLinesFill />
-            </div>
+          <div className='left-0'>
+            <h1 className='py-4 text-gray-700'>
+              Hi, I&apos;m <span className='text-[#5651e5]'>Donna</span>
+            </h1>
+            <h2 className='py-2 text-gray-700'>
+              &lt; <span className='text-[#709dff]'><Typewriter words={roles} loop={false} delaySpeed='4500' /></span> /&gt;
+            </h2>
+          </div>
+          <div className='py-8'>
+            <Socials />
+          </div>
+          <div className='text-gray-600 max-w-[90%] m-auto flex flex-wrap gap-5 justify-center align'>
+            { tags.map((tag, index) => <p key={index} className='rounded text-sm bg-slate-300 p-2 max-w-sm max-h-8 overflow-hidden'>#{tag}</p>)}
           </div>
         </div>
       </div>
     </div>
   )
 };
-
-export default Main;
