@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import { Section } from '../index.js';
 
 export default function About() {
@@ -19,9 +20,9 @@ export default function About() {
           <p className='py-4 text-gray-600'>
             I find it incredibly fulfilling to see a project come to life through coding and am excited to apply my skills to innovative and modernized solutions that positively impact the community.
           </p>
-          <p className='py-4 link'>
+          <Link href='/#projects' className='py-4 link'>
             Check out some of my latest projects!
-          </p>
+          </Link>
         </div>
         <div className='flex items-center justify-center'>
           <Image
@@ -30,7 +31,6 @@ export default function About() {
             width='200'
             height='200'
             className='rounded-xl shadow-xl shadow-gray-400 hover:scale-105 ease-in duration-300 min-w-full'
-            loading='lazy'
           />
         </div>
       </div>
