@@ -15,14 +15,16 @@ export default function Navbar() {
   return (
     <div className='fixed w-full h-20 shadow-xl z-[100] bg-slate-100'>
       <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16'>
-        <Image
-          src='/../public/assets/navLogo.png'
-          alt='/'
-          width='70'
-          height='50'
-        />
+        <Link href='/'>
+          <Image
+            src='/../public/assets/navLogo.png'
+            alt='/'
+            width='70'
+            height='50'
+          />
+        </Link>
         <div>
-          <Menu ulClass='hidden md:flex' />
+          <Menu ulClass='hidden md:flex' setNav={ setNav }/>
         </div>
         <div className='md:hidden cursor-pointer'>
           <AiOutlineMenu onClick={ toggleNav } size={ 25 } />
@@ -51,7 +53,7 @@ export default function Navbar() {
             </div>
           </div>
           <div className='py-4 flex flex-col'>
-            <Menu liClass='py-4' />
+            <Menu liClass='py-4' setNav={ setNav } />
             <div className='pt-40'>
               <Socials />
             </div>
