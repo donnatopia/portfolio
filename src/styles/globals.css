@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+  font-family: 'Roboto', sans-serif;
+}
 
 /* ============================
 
@@ -10,11 +14,6 @@
 =============================== */
 
 @layer base {
-  html {
-    scroll-behavior: smooth;
-    font-family: 'Roboto', sans-serif;
-  }
-
   body {
     @apply bg-[#ecf0f3] text-[#1f2937] tracking-wide;
   }

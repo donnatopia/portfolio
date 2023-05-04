@@ -9,6 +9,7 @@ export default function Icon({ type, skill }) {
         alt={skill}
         width='50'
         height='50'
+        laoding='lazy'
       />
       <h5 className='text-gray-700 uppercase text-center' >{skill}</h5>
     </div>

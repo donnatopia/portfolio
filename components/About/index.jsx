@@ -30,6 +30,7 @@ export default function About() {
             width='200'
             height='200'
             className='rounded-xl shadow-xl shadow-gray-400 hover:scale-105 ease-in duration-300 min-w-full'
+            loading='lazy'
           />
         </div>
       </div>

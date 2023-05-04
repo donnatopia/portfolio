@@ -48,7 +48,7 @@ export default function Skills() {
   };
 
   return (
-    <Section title='Skills' subtitle='What I Can Do'>
+    <Section id='skills' title='Skills' subtitle='What I Can Do'>
       <Slider {...settings}>
         { skillTypes.map(skillType =>(
           <div key={skillType} className='px-4' >

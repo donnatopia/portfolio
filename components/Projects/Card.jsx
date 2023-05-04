@@ -10,6 +10,7 @@ export default function Card({ project }) {
         width='400'
         height='400'
         alt={ project.title }
+        loading='lazy'
       />
       <h3 className='uppercase'><a href={project.github} target='_blank'>{ project.title }</a></h3>
       <p className='text-center'>{ project.description }</p>

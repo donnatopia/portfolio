@@ -26,7 +26,7 @@ export default function Projects() {
   }
 
   return (
-    <Section title='Projects' subtitle='What I&apos;ve Built'>
+    <Section id='projects' title='Projects' subtitle='What I&apos;ve Built'>
       <Slider {...settings}>
         { projects.map(project => (
           <div key={ project.title } className='p-4'>
