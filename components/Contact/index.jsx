@@ -5,7 +5,7 @@ import Socials from './Socials.jsx';
 
 export default function Contact() {
   return (
-    <Section title='Contact' subtitle='Get In Touch'>
+    <Section id='contact' title='Contact' subtitle='Get In Touch'>
       <div className='grid lg:grid-cols-5 gap-8'>
         <div className='col-span-3 lg:col-span-2 w-full h0full shadow-xl shadow-gray-400 rounded-xl p-4 bg-slate-100'>
           <div className='lg:p-4 h-full flex flex-col justify-between'>

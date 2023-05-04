@@ -3,8 +3,9 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 import Socials from '../Contact/Socials.jsx';
+import Menu from './Menu.jsx';
 
-const Navbar = () => {
+export default function Navbar() {
   const [nav, setNav] = useState(false);
 
   const toggleNav = () => {
@@ -21,23 +22,7 @@ const Navbar = () => {
           height='50'
         />
         <div>
-          <ul className='hidden md:flex'>
-            <Link href='/'>
-              <li className='ml-10 text-sm uppercase hover:border-b'>Home</li>
-            </Link>
-            <Link href='/'>
-              <li className='ml-10 text-sm uppercase hover:border-b'>About</li>
-            </Link>
-            <Link href='/'>
-              <li className='ml-10 text-sm uppercase hover:border-b'>Skills</li>
-            </Link>
-            <Link href='/'>
-              <li className='ml-10 text-sm uppercase hover:border-b'>Projects</li>
-            </Link>
-            <Link href='/'>
-              <li className='ml-10 text-sm uppercase hover:border-b'>Contact</li>
-            </Link>
-          </ul>
+          <Menu ulClass='hidden md:flex' />
         </div>
         <div className='md:hidden cursor-pointer'>
           <AiOutlineMenu onClick={ toggleNav } size={ 25 } />
@@ -66,23 +51,7 @@ const Navbar = () => {
             </div>
           </div>
           <div className='py-4 flex flex-col'>
-            <ul className='uppercase'>
-              <Link href='/'>
-                <li className='py-4 text-sm'>Home</li>
-              </Link>
-              <Link href='/'>
-                <li className='py-4 text-sm'>About</li>
-              </Link>
-              <Link href='/'>
-                <li className='py-4 text-sm'>Skills</li>
-              </Link>
-              <Link href='/'>
-                <li className='py-4 text-sm'>Projects</li>
-              </Link>
-              <Link href='/'>
-                <li className='py-4 text-sm'>Contact</li>
-              </Link>
-            </ul>
+            <Menu liClass='py-4' />
             <div className='pt-40'>
               <Socials />
             </div>
@@ -92,5 +61,3 @@ const Navbar = () => {
     </div>
   )
 }
-
-export default Navbar;

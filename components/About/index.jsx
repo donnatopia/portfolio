@@ -4,7 +4,7 @@ import { Section } from '../index.js';
 
 export default function About() {
   return (
-    <Section title='About' subtitle='Who I am'>
+    <Section id='about' title='About' subtitle='Who I am'>
       <div className='max-w-[1240px] md:grid grid-cols-3 gap-8'>
         <div className='col-span-2'>
           <p className='py-4 text-gray-600'>
@@ -19,7 +19,7 @@ export default function About() {
           <p className='py-4 text-gray-600'>
             I find it incredibly fulfilling to see a project come to life through coding and am excited to apply my skills to innovative and modernized solutions that positively impact the community.
           </p>
-          <p className='py-4 text-[#5651e5] cursor-pointer hover:underline'>
+          <p className='py-4 link'>
             Check out some of my latest projects!
           </p>
         </div>
