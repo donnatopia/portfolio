@@ -12,6 +12,8 @@ export default function Projects() {
     slidesToShow: 2,
     slidesToScroll: 1,
     speed: 1000,
+    autoplay: true,
+    autoplaySpeed: 5000,
     responsive: [
       {
         breakpoint: 480,
