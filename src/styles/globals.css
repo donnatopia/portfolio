@@ -2,11 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
-  scroll-behavior: smooth;
-}
+
+/* ============================
+
+  Base
+
+=============================== */
 
 @layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Roboto', sans-serif;
+  }
+
   body {
     @apply bg-[#ecf0f3] text-[#1f2937] tracking-wide;
   }
@@ -30,8 +38,26 @@ html {
   button {
     @apply shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#5651e5] to-[#709dff] text-white;
   }
+};
 
+/* ============================
+
+  Components
+
+=============================== */
+
+@layer components {
+
+}
+
+/* ============================
+
+  Utilities
+
+=============================== */
+
+@layer utilities {
   .link {
     @apply text-[#5651e5] hover:underline cursor-pointer;
   }
-};
+}

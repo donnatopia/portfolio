@@ -15,8 +15,8 @@ export default function Main() {
             <h1 className='py-4 text-gray-700'>
               Hi, I&apos;m <span className='text-[#5651e5]'>Donna</span>
             </h1>
-            <h2 className='py-2 text-gray-700'>
-              &lt; <span className='text-[#709dff]'><Typewriter words={roles} loop={false} delaySpeed='4500' /></span> /&gt;
+            <h2 id='role' className='py-2 text-gray-700'>
+              &lt; <span className='text-[#709dff] font-mono'><Typewriter words={roles} loop={false} delaySpeed='4500' /></span> /&gt;
             </h2>
           </div>
           <div className='py-8'>
