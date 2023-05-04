@@ -3,6 +3,7 @@ import axios from 'axios';
 import Image from 'next/image';
 import { Section } from '../index.js';
 import Card from './Card.jsx';
+import Slider from 'react-slick';
 
 export default function Skills() {
   const [skillTypes, setSkillTypes] = useState([]);
@@ -13,13 +14,49 @@ export default function Skills() {
       .catch((err) => console.log('error fetching skill types', err));
   }, []);
 
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  };
+
   return (
     <Section title='Skills' subtitle='What I Can Do'>
-      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 justify-center items-center'>
-        { skillTypes.map(skillType =>
-          <Card key={skillType} skillType={skillType}/>
-        )}
-      </div>
+      <Slider {...settings}>
+        { skillTypes.map(skillType =>(
+          <div key={skillType} className='px-4' >
+            <Card skillType={skillType}/>
+          </div>
+        ))}
+      </Slider>
     </Section>
   )
 }
