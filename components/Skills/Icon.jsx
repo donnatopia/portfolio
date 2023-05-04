@@ -5,7 +5,7 @@ export default function Icon({ type, skill }) {
   return (
     <div className='p-3 gap-3 flex flex-col items-center justify-center'>
       <Image
-        src={`/../public/assets/skills/${type}/${skill}.png`}
+        src={`/assets/skills/${type}/${skill}.png`}
         alt={skill}
         width='50'
         height='50'

@@ -17,8 +17,8 @@ export default function Navbar() {
       <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16'>
         <Link href='/'>
           <Image
-            src='/../public/assets/navLogo.png'
-            alt='/'
+            src='/assets/navLogo.png'
+            alt='logo'
             width='70'
             height='50'
           />
@@ -42,7 +42,7 @@ export default function Navbar() {
           <div>
             <div className='flex w-full items-center justify-between'>
               <Image
-                src='/../public/assets/navLogo.png'
+                src='/assets/navLogo.png'
                 alt='/'
                 width='70'
                 height='50'

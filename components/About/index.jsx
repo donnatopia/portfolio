@@ -26,7 +26,7 @@ export default function About() {
         </div>
         <div className='flex items-center justify-center'>
           <Image
-            src='/../public/assets/profile.jpg'
+            src='/assets/profile.jpg'
             alt='profile'
             width='200'
             height='200'
