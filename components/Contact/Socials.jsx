@@ -5,6 +5,7 @@ import { FaLinkedinIn, FaGithub } from 'react-icons/fa';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
 
 export default function Socials() {
+
   return (
     <div>
       <p className='uppercase text-gray-500 text-sm text-center'>Connect with Me</p>

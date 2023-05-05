@@ -1,6 +1,7 @@
 import React from 'react';
 import { Typewriter } from 'react-simple-typewriter';
 import Socials from '../Contact/Socials.jsx';
+import Calendly from '../Contact/Calendly.jsx';
 
 export default function Main() {
   const roles = ['Fullstack Engineer', 'Frontend Developer', 'Backend Developer', 'Software Engineer'];
@@ -18,6 +19,9 @@ export default function Main() {
             <h2 id='role' className='py-2 text-gray-700'>
               &lt; <span className='text-[#709dff] font-mono'><Typewriter words={roles} loop={false} delaySpeed='4500' /></span> /&gt;
             </h2>
+          </div>
+          <div className='py-8 flex justify-center'>
+            <Calendly />
           </div>
           <div className='py-8'>
             <Socials />
