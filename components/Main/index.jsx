@@ -5,7 +5,6 @@ import Calendly from '../Contact/Calendly.jsx';
 
 export default function Main() {
   const roles = ['Fullstack Engineer', 'Frontend Developer', 'Backend Developer', 'Software Engineer'];
-  const tags = ['fullstack', 'intuitive', 'memorable-ui', 'transformative-ideas', 'high-quality-software'];
 
   return (
     <div className='w-full h-screen text-center'>
@@ -25,9 +24,6 @@ export default function Main() {
           </div>
           <div className='py-8'>
             <Socials />
-          </div>
-          <div className='text-gray-600 max-w-[90%] m-auto flex flex-wrap gap-5 justify-center align'>
-            { tags.map((tag, index) => <p key={index} className='rounded text-sm bg-slate-300 p-2 max-w-sm max-h-8 overflow-hidden shadow-lg shadow-gray-350 hover:scale-110 ease-in duration-200'>#{tag}</p>)}
           </div>
         </div>
       </div>

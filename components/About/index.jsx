@@ -2,6 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Section } from '../index.js';
+import Tags from './Tags.jsx';
 
 export default function About() {
   return (
@@ -20,9 +21,10 @@ export default function About() {
           <p className='py-4 text-gray-600'>
             I find it incredibly fulfilling to see a project come to life through coding and am excited to apply my skills to innovative and modernized solutions that positively impact the community.
           </p>
-          <Link href='/#projects' className='py-4 link'>
+          <Link href='/#projects' className='py-6 link'>
             Check out some of my latest projects!
           </Link>
+          <Tags />
         </div>
         <div className='flex items-center justify-center'>
           <Image
