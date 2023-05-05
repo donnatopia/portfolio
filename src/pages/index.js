@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import Image from 'next/image';
-import { Navbar, Main, About, Skills, Projects } from '../../components';
+import { Navbar, Main, About, Tech, Projects } from '../../components';
 
 export default function Home() {
   return (
@@ -13,7 +13,7 @@ export default function Home() {
     <Navbar />
     <Main />
     <About />
-    <Skills />
+    <Tech />
     <Projects />
    </div>
   )
