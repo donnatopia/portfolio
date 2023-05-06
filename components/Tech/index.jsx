@@ -36,18 +36,20 @@ export default function Tech() {
           slidesToScroll: 1,
         }
       }
-    ]
+    ],
   };
 
   return (
     <Section id='tech' title='Tech' subtitle='What I Can Do'>
-      <Slider {...settings}>
-        { techStack.map(tech =>(
-          <div key={tech.category} className='px-4' >
-            <Card category={tech.category} stack={tech.stack}/>
-          </div>
-        ))}
-      </Slider>
+      <div className='p-4'>
+        <Slider {...settings}>
+          { techStack.map(tech =>(
+            <div key={tech.category} className='px-4' >
+              <Card category={tech.category} stack={tech.stack}/>
+            </div>
+          ))}
+        </Slider>
+      </div>
     </Section>
   )
 }
