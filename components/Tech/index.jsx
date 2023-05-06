@@ -44,7 +44,7 @@ export default function Tech() {
       <div className='p-4'>
         <Slider {...settings}>
           { techStack.map(tech =>(
-            <div key={tech.category} className='px-4' >
+            <div key={tech.category} className='p-6' >
               <Card category={tech.category} stack={tech.stack}/>
             </div>
           ))}
