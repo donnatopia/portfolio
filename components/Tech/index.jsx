@@ -40,7 +40,7 @@ export default function Tech() {
   };
 
   return (
-    <Section id='tech' title='Tech' subtitle='What I Can Do'>
+    <Section id='tech' title='Tech' subtitle='Featured Tech Stack'>
       <div className='p-4'>
         <Slider {...settings}>
           { techStack.map(tech =>(
