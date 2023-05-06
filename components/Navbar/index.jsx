@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 import Socials from '../Contact/Socials.jsx';
 import Menu from './Menu.jsx';
+import Calendly from '../Contact/Calendly.jsx';
 
 export default function Navbar() {
   const [nav, setNav] = useState(false);
@@ -52,11 +53,10 @@ export default function Navbar() {
               </div>
             </div>
           </div>
-          <div className='py-4 flex flex-col'>
+          <div className='py-4 flex flex-col gap-20'>
             <Menu liClass='py-4' setNav={ setNav } />
-            <div className='pt-40'>
-              <Socials />
-            </div>
+            <Calendly />
+            <Socials />
           </div>
         </div>
       </div>
