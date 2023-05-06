@@ -30,7 +30,7 @@ export default function Projects() {
       <div className='p-4'>
         <Slider {...settings}>
           { projects.map(project => (
-            <div key={ project.title } className='p-6'>
+            <div key={ project.title } className='py-6 px-2'>
               <Card project={ project } />
             </div>
           ))}
