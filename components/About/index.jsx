@@ -32,7 +32,7 @@ export default function About() {
             alt='profile'
             width='200'
             height='200'
-            className='rounded-xl shadow-xl shadow-gray-400 hover:scale-105 ease-in duration-300 min-w-full'
+            className='rounded-xl shadow-lg shadow-gray-400 zoom min-w-full'
           />
         </div>
       </div>

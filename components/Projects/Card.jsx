@@ -14,7 +14,7 @@ export default function Card({ project }) {
           className='rounded'
         />
       </div>
-      <h3 className='uppercase text-lg tracking-wider text-[#709dff] text-center'>
+      <h3 className='uppercase text-lg tracking-wider text-secondary text-center'>
         <a href={project.github} target='_blank'>{ project.title }</a>
       </h3>
       <p className='text-center'>{ project.description }</p>

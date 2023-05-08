@@ -13,10 +13,10 @@ export default function Main() {
           <p className='uppercase text-sm tracking-widest text-gray-600'>hello world</p>
           <div className='left-0'>
             <h1 className='py-4 text-gray-700'>
-              Hi, I&apos;m <span className='text-[#5651e5]'>Donna</span>
+              Hi, I&apos;m <span className='text-primary'>Donna</span>
             </h1>
-            <h2 id='role' className='py-2 text-gray-700'>
-              &lt; <span className='text-[#709dff] font-mono'><Typewriter words={roles} loop={false} delaySpeed='4500' /></span> /&gt;
+            <h2 id='role' className='py-2 text-gray-700 w-screen'>
+              &lt; <span className='text-secondary font-mono'><Typewriter words={roles} loop={false} delaySpeed='4500' /></span> /&gt;
             </h2>
           </div>
           <div className='py-8 flex justify-center'>

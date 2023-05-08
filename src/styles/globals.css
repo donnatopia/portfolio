@@ -35,7 +35,7 @@ html {
   }
 
   button {
-    @apply p-4 shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#5651e5] to-[#709dff] text-white hover:scale-110 ease-in duration-300;
+    @apply p-4 shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-primary to-secondary text-white hover:scale-110 ease-in duration-300;
   }
 };
 
@@ -51,7 +51,15 @@ html {
   }
 
   .card {
-    @apply p-4 rounded-xl shadow-lg shadow-gray-400 bg-slate-100
+    @apply p-4 rounded-xl shadow-lg shadow-gray-400 bg-slate-100 zoom
+  }
+
+  .social {
+    @apply rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer zoom
+  }
+
+  .nav-item {
+    @apply ml-10 text-sm uppercase hover:text-primary
   }
 }
 
@@ -67,6 +75,6 @@ html {
   }
 
   .link {
-    @apply text-[#5651e5] hover:underline cursor-pointer;
+    @apply text-primary hover:underline cursor-pointer;
   }
 }
