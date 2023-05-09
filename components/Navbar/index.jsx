@@ -24,7 +24,8 @@ export default function Navbar({ DarkButton }) {
             height='50'
           />
         </Link>
-        <div>
+        <div className='flex-center'>
+          <DarkButton />
           <Menu ulClass='hidden md:flex' setNav={ setNav } DarkButton={ DarkButton }/>
         </div>
         <div className='md:hidden cursor-pointer'>
