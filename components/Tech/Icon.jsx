@@ -5,7 +5,7 @@ import Link from 'next/link';
 export default function Icon({ icon }) {
   return (
     <Link href={ icon.link } target='_blank'>
-      <div className='p-3 gap-3 flex-center flex-col hover:bg-light-tertiary-bg dark rounded-xl'>
+      <div className='icon'>
         <Image
           src={ icon.logo }
           alt={ icon.title }

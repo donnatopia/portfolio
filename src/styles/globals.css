@@ -46,6 +46,11 @@ html {
 =============================== */
 
 @layer components {
+  .title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+  }
+
   .tags {
     @apply uppercase text-xs font-tertiary tertiary-bg rounded p-2 text-center max-w-sm max-h-8 overflow-hidden;
   }
@@ -60,6 +65,10 @@ html {
 
   .nav-item {
     @apply ml-10 text-sm uppercase hover:text-primary;
+  }
+
+  .icon {
+    @apply p-3 gap-3 flex-center flex-col dark:hover:bg-light-tertiary-bg hover:bg-dark-secondary-font rounded-xl
   }
 
   .carousel-dot {
