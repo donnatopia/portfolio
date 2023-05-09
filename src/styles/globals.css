@@ -15,7 +15,7 @@ html {
 
 @layer base {
   body {
-    @apply bg-[#ecf0f3] text-[#1f2937] tracking-wide;
+    @apply tracking-wide main-theme;
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -35,7 +35,7 @@ html {
   }
 
   button {
-    @apply p-4 shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-primary to-secondary text-white hover:scale-110 ease-in duration-300;
+    @apply p-4 shadow rounded-xl uppercase bg-gradient-to-r from-primary to-secondary text-white hover:scale-110 ease-in duration-300;
   }
 };
 
@@ -47,19 +47,27 @@ html {
 
 @layer components {
   .tags {
-    @apply uppercase text-xs text-gray-500 bg-slate-200 rounded p-2 text-center shadow-lg max-w-sm max-h-8 overflow-hidden
+    @apply uppercase text-xs font-tertiary tertiary-bg rounded p-2 text-center max-w-sm max-h-8 overflow-hidden;
   }
 
   .card {
-    @apply p-4 rounded-xl shadow-lg shadow-gray-400 bg-slate-100 zoom
+    @apply p-4 rounded-xl shadow secondary-bg zoom;
   }
 
   .social {
-    @apply rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer zoom
+    @apply rounded-full shadow p-3 cursor-pointer zoom;
   }
 
   .nav-item {
-    @apply ml-10 text-sm uppercase hover:text-primary
+    @apply ml-10 text-sm uppercase hover:text-primary;
+  }
+
+  .carousel-dot {
+    @apply font-secondary rounded hover:text-secondary
+  }
+
+  .carousel-dot.active {
+    @apply text-primary
   }
 }
 
@@ -70,8 +78,36 @@ html {
 =============================== */
 
 @layer utilities {
+  .main-theme {
+    @apply bg-light-main-bg text-light-main-font dark:bg-dark-main-bg dark:text-dark-main-font
+  }
+
+  .secondary-bg {
+    @apply bg-light-secondary-bg dark:bg-dark-secondary-bg
+  }
+
+  .tertiary-bg {
+    @apply bg-light-tertiary-bg dark:bg-dark-tertiary-bg
+  }
+
+  .font-secondary {
+    @apply text-light-secondary-font dark:text-dark-secondary-font;
+  }
+
+  .font-tertiary {
+    @apply text-light-tertiary-font dark:text-dark-tertiary-font;
+  }
+
+  .flex-center {
+    @apply flex justify-center items-center;
+  }
+
+  .shadow {
+    @apply shadow-md shadow-light-shadow dark:shadow-dark-shadow;
+  }
+
   .zoom {
-    @apply hover:scale-105 ease-in duration-200
+    @apply hover:scale-105 ease-in duration-200;
   }
 
   .link {

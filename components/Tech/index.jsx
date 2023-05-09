@@ -1,11 +1,14 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import Image from 'next/image';
 import { Section } from '../index.js';
 import Card from './Card.jsx';
 import Slider from 'react-slick';
 import { tech as techStack } from '../../utils';
+import { BsFillHexagonFill } from 'react-icons/bs';
 
 export default function Tech() {
+  const [activeSlide, setActiveSlide] = useState(0);
+
   const settings = {
     dots: true,
     infinite: true,
@@ -37,6 +40,10 @@ export default function Tech() {
         }
       }
     ],
+    customPaging: (i) => (
+      <BsFillHexagonFill className={`carousel-dot ${activeSlide === i ? 'active' : ''}`} />
+    ),
+    beforeChange: (current, next) => setActiveSlide(next),
   };
 
   return (

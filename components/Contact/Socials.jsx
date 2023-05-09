@@ -8,7 +8,7 @@ export default function Socials() {
 
   return (
     <div>
-      <p className='uppercase text-gray-500 text-sm text-center'>Connect with Me</p>
+      <p className='uppercase font-secondary text-sm text-center'>Connect with Me</p>
       <div className='flex items-center justify-between max-w-[330px] m-auto py-4'>
         <button className='social'>
           <Link href='https://www.linkedin.com/in/donnawong515/' target='_blank'>

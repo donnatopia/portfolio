@@ -1,11 +1,15 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import axios from 'axios';
 import { Section } from '../index.js';
 import { projects } from '../../utils';
 import Card from './Card.jsx';
 import Slider from 'react-slick';
+import { FiBox } from 'react-icons/fi';
+import { BsFillHexagonFill } from 'react-icons/bs';
 
 export default function Projects() {
+  const [activeSlide, setActiveSlide] = useState(0);
+
   const settings = {
     dots: true,
     infinite: true,
@@ -22,7 +26,11 @@ export default function Projects() {
           slidesToScroll: 1
         }
       }
-    ]
+    ],
+    customPaging: (i) => (
+      <BsFillHexagonFill className={`carousel-dot ${activeSlide === i ? 'active' : ''}`} />
+    ),
+    beforeChange: (current, next) => setActiveSlide(next),
   }
 
   return (

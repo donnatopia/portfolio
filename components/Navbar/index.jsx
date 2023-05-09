@@ -6,7 +6,7 @@ import Socials from '../Contact/Socials.jsx';
 import Menu from './Menu.jsx';
 import Calendly from '../Contact/Calendly.jsx';
 
-export default function Navbar() {
+export default function Navbar({ DarkButton }) {
   const [nav, setNav] = useState(false);
 
   const toggleNav = () => {
@@ -14,18 +14,18 @@ export default function Navbar() {
   }
 
   return (
-    <div className='fixed w-full h-20 shadow-xl z-[100] bg-slate-100'>
+    <div className='fixed w-full h-20 shadow-xl z-[100] secondary-bg'>
       <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16'>
         <Link href='/'>
           <Image
-            src='/assets/navLogo.png'
+            src='/assets/logo.png'
             alt='logo'
             width='70'
             height='50'
           />
         </Link>
         <div>
-          <Menu ulClass='hidden md:flex' setNav={ setNav }/>
+          <Menu ulClass='hidden md:flex' setNav={ setNav } DarkButton={ DarkButton }/>
         </div>
         <div className='md:hidden cursor-pointer'>
           <AiOutlineMenu onClick={ toggleNav } size={ 25 } />
@@ -36,25 +36,25 @@ export default function Navbar() {
         <div
           className={
             nav
-              ? 'fixed-left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 ease-in duration-200'
+              ? 'fixed-left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen secondary-bg p-10 ease-in duration-200'
               : 'fixed left-[-100%] top-0 p-10 ease-in duration-200'
           }
         >
           <div>
             <div className='flex w-full items-center justify-between'>
               <Image
-                src='/assets/navLogo.png'
+                src='/assets/logo.png'
                 alt='/'
                 width='70'
                 height='50'
               />
-              <div onClick={ toggleNav } className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer'>
+              <button onClick={ toggleNav } className='rounded-full p-3'>
                 <AiOutlineClose />
-              </div>
+              </button>
             </div>
           </div>
           <div className='py-4 flex flex-col gap-20'>
-            <Menu liClass='py-4' setNav={ setNav } />
+            <Menu liClass='py-4' setNav={ setNav } DarkButton={ DarkButton }/>
             <Calendly />
             <Socials />
           </div>

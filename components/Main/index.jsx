@@ -8,18 +8,18 @@ export default function Main() {
 
   return (
     <div className='w-full h-screen text-center'>
-      <div className='max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center'>
+      <div className='max-w-[1240px] w-full h-full mx-auto p-2 flex-center'>
         <div>
-          <p className='uppercase text-sm tracking-widest text-gray-600'>hello world</p>
+          <p className='uppercase text-sm tracking-widest font-secondary'>hello world</p>
           <div className='left-0'>
-            <h1 className='py-4 text-gray-700'>
+            <h1 className='py-4 font-secondary'>
               Hi, I&apos;m <span className='text-primary'>Donna</span>
             </h1>
-            <h2 id='role' className='py-2 text-gray-700 w-screen'>
+            <h2 id='role' className='py-2 font-secondary w-screen'>
               &lt; <span className='text-secondary font-mono'><Typewriter words={roles} loop={false} delaySpeed='4500' /></span> /&gt;
             </h2>
           </div>
-          <div className='py-8 flex justify-center'>
+          <div className='py-8 flex-center'>
             <Calendly />
           </div>
           <div className='py-8'>

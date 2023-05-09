@@ -4,8 +4,8 @@ import Link from 'next/link';
 
 export default function Card({ project }) {
   return (
-    <div className='card w-full h-96 flex flex-col items-center justify-center gap-6 zoom'>
-      <div className='h-40 overflow-hidden flex items-center justify-center'>
+    <div className='card w-full h-96 flex-center flex-col gap-6 zoom'>
+      <div className='h-40 overflow-hidden flex-center'>
         <Image
           src={ project.media }
           width='400'

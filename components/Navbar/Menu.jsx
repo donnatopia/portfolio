@@ -1,9 +1,10 @@
 import React from 'react';
 import Link from 'next/link';
 
-export default function Menu({ ulClass, liClass, setNav }) {
+export default function Menu({ ulClass, liClass, setNav, DarkButton }) {
   return (
-    <ul className={ ulClass }>
+    <ul className={`${ ulClass }`}>
+      <DarkButton />
       <Link href='/'>
         <li className={`nav-item ${ liClass }`} onClick={() => setNav(false)}>Home</li>
       </Link>
