@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export default function Menu({ ulClass, liClass, setNav }) {
   return (
-    <ul className={`${ ulClass }`}>
+    <ul className={ ulClass }>
       <Link href='/'>
         <li className={`nav-item ${ liClass }`} onClick={() => setNav(false)}>Home</li>
       </Link>

@@ -5,8 +5,9 @@ import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 import Socials from '../Contact/Socials.jsx';
 import Menu from './Menu.jsx';
 import Calendly from '../Contact/Calendly.jsx';
+import DarkButton from '../Layouts/DarkButton.jsx';
 
-export default function Navbar({ DarkButton }) {
+export default function Navbar() {
   const [nav, setNav] = useState(false);
 
   const toggleNav = () => {
@@ -26,7 +27,7 @@ export default function Navbar({ DarkButton }) {
         </Link>
         <div className='flex-center'>
           <DarkButton />
-          <Menu ulClass='hidden md:flex' setNav={ setNav } DarkButton={ DarkButton }/>
+          <Menu ulClass='hidden md:flex' setNav={ setNav } />
         </div>
         <div className='md:hidden cursor-pointer'>
           <AiOutlineMenu onClick={ toggleNav } size={ 25 } />
@@ -55,7 +56,7 @@ export default function Navbar({ DarkButton }) {
             </div>
           </div>
           <div className='py-4 flex flex-col gap-20'>
-            <Menu liClass='py-4' setNav={ setNav } DarkButton={ DarkButton }/>
+            <Menu liClass='py-4' setNav={ setNav } />
             <Calendly />
             <Socials />
           </div>
