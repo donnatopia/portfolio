@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
+import { AiOutlineMenu, AiOutlineDoubleLeft } from 'react-icons/ai';
 import Socials from '../Contact/Socials.jsx';
 import Menu from './Menu.jsx';
 import Calendly from '../Contact/Calendly.jsx';
@@ -50,8 +50,8 @@ export default function Navbar() {
                 width='70'
                 height='50'
               />
-              <button onClick={ toggleNav } className='rounded-full p-3'>
-                <AiOutlineClose />
+              <button onClick={ toggleNav } className='rounded-xl p-3'>
+                <AiOutlineDoubleLeft />
               </button>
             </div>
           </div>

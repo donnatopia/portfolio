@@ -7,7 +7,7 @@ import { BsFillPersonLinesFill } from 'react-icons/bs';
 export default function Socials() {
 
   return (
-    <div className='flex items-center justify-between max-w-[250px] m-auto py-4'>
+    <div className='flex items-center justify-between max-w-[250px] py-4'>
       <Link href='https://www.linkedin.com/in/donnawong515/' target='_blank' className='social'>
         <FaLinkedinIn />
       </Link>

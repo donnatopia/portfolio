@@ -23,11 +23,11 @@ html {
   }
 
   h1 {
-    @apply text-4xl sm:text-5xl md:text-6xl;
+    @apply text-4xl sm:text-5xl;
   }
 
   h2 {
-    @apply text-3xl sm:text-4xl;
+    @apply text-2xl sm:text-3xl;
   }
 
   li {
@@ -60,7 +60,7 @@ html {
   }
 
   .social {
-    @apply p-4 cursor-pointer zoom text-xl rounded-xl font-secondary;
+    @apply p-4 cursor-pointer zoom text-xl rounded-xl font-secondary hover:text-secondary;
   }
 
   .nav-item {
@@ -87,6 +87,10 @@ html {
 =============================== */
 
 @layer utilities {
+  .home {
+    width: 70vw;
+  }
+
   .main-theme {
     @apply bg-light-main-bg text-light-main-font dark:bg-dark-main-bg dark:text-dark-main-font
   }
