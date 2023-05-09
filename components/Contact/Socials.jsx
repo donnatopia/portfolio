@@ -7,25 +7,16 @@ import { BsFillPersonLinesFill } from 'react-icons/bs';
 export default function Socials() {
 
   return (
-    <div>
-      <p className='uppercase font-secondary text-sm text-center'>Connect with Me</p>
-      <div className='flex items-center justify-between max-w-[330px] m-auto py-4'>
-        <button className='social'>
-          <Link href='https://www.linkedin.com/in/donnawong515/' target='_blank'>
-            <FaLinkedinIn />
-          </Link>
-        </button>
-        <button className='social'>
-          <Link href='https://github.com/donnatopia' target='_blank'>
-            <FaGithub />
-          </Link>
-        </button>
-        <button className='social'>
-          <Link href='mailto:donnaw515.dw@gmail.com' target='_blank'>
-            <AiOutlineMail />
-          </Link>
-        </button>
-      </div>
+    <div className='flex items-center justify-between max-w-[250px] m-auto py-4'>
+      <Link href='https://www.linkedin.com/in/donnawong515/' target='_blank' className='social'>
+        <FaLinkedinIn />
+      </Link>
+      <Link href='https://github.com/donnatopia' target='_blank' className='social'>
+        <FaGithub />
+      </Link>
+      <Link href='mailto:donnaw515.dw@gmail.com' target='_blank' className='social'>
+        <AiOutlineMail />
+      </Link>
     </div>
   )
 }

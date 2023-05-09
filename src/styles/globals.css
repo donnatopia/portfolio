@@ -60,7 +60,7 @@ html {
   }
 
   .social {
-    @apply rounded-full shadow p-3 cursor-pointer zoom;
+    @apply p-4 cursor-pointer zoom text-xl rounded-xl font-secondary;
   }
 
   .nav-item {
@@ -105,6 +105,10 @@ html {
 
   .font-tertiary {
     @apply text-light-tertiary-font dark:text-dark-tertiary-font;
+  }
+
+  .gradient-secondary {
+    @apply bg-gradient-to-br from-secondary to-tertiary
   }
 
   .flex-center {

@@ -16,6 +16,9 @@ export default function Menu({ ulClass, liClass, setNav }) {
       <Link href='/#projects'>
         <li className={`nav-item ${ liClass }`} onClick={() => setNav(false)}>Projects</li>
       </Link>
+      <Link href='/#contact'>
+        <li className={`nav-item ${ liClass }`} onClick={() => setNav(false)}>Contact</li>
+      </Link>
     </ul>
   )
 }

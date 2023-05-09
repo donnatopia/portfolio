@@ -1,6 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
-import { Navbar, Main, About, Tech, Projects } from '../../components';
+import { Navbar, Main, About, Tech, Projects, Contact } from '../../components';
 
 export default function Home() {
   return (
@@ -16,6 +16,7 @@ export default function Home() {
       <About />
       <Tech />
       <Projects />
+      <Contact />
     </div>
    </main>
   )
