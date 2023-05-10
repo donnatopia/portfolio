@@ -92,7 +92,7 @@ html {
   }
 
   .main-theme {
-    @apply bg-light-main-bg text-light-main-font dark:bg-dark-main-bg dark:text-dark-main-font
+    @apply bg-light-main-bg dark:bg-dark-main-bg font-main
   }
 
   .secondary-bg {
@@ -101,6 +101,10 @@ html {
 
   .tertiary-bg {
     @apply bg-light-tertiary-bg dark:bg-dark-tertiary-bg
+  }
+
+  .font-main {
+    @apply text-light-main-font dark:text-dark-main-font
   }
 
   .font-secondary {
